@@ -24,8 +24,6 @@ RECIPIENT_EMAIL=destinatario@example.com  # opcional: valor por defecto
 PORT=3000
 ```
 
-> ⚠️ **No** comitees el archivo `.env` ni publiques tu API key. Ya se añadió `.env` a `.gitignore`.
-
 ---
 
 ## 2) Instalar dependencias
@@ -111,14 +109,4 @@ curl -s http://localhost:3000/api/health
 
 ---
 
-## Nota sobre la dirección que proporcionaste
-La cadena que compartiste como "dirección de correo" parece ser un token o API key y **no** una dirección de correo válida. Por favor confirma la dirección de destino real (por ejemplo `mi@dominio.com`) para poder probar envíos.
 
----
-
-Si quieres, puedo:
-- agregar validación de email en la UI y mostrar errores amigables;
-- agregar `GET /api/health` y una pequeña prueba automatizada;
-- o preparar un script de despliegue para producción.
-
-Dime cuál prefieres y lo implemento.
